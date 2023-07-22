@@ -14,6 +14,8 @@
     <name>EK API CaseOne</name>
     <description>EK API CaseOne</description>
     <properties>
+        <sonar.organization>renaldom</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <java.version>17</java.version>
     </properties>
     <dependencies>

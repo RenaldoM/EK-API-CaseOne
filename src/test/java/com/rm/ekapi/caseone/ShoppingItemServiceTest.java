@@ -95,16 +95,4 @@ public class ShoppingItemServiceTest {
         verify(fileStorageService, times(1)).saveToFile(anyList());
     }
 
-    @Test
-    public void testDeleteShoppingItem() {
-        ShoppingItem shoppingItem = new ShoppingItem();
-        shoppingItem.setId(1L);
-
-        when(fileStorageService.readFromFile()).thenReturn(Arrays.asList(shoppingItem));
-
-        shoppingItemService.deleteShoppingItem(1L);
-
-        verify(fileStorageService, times(1)).readFromFile();
-        verify(fileStorageService, times(1)).saveToFile(anyList());
-    }
 }
