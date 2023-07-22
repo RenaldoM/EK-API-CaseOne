@@ -1,5 +1,7 @@
 package com.rm.ekapi.caseone;
 
+import org.springframework.stereotype.Service;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
